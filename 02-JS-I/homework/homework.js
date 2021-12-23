@@ -61,9 +61,9 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(x == y){
-    return true;
+    true;
   } else {
-    return false;
+    false;
   }
   
 }
@@ -73,9 +73,9 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(str1.length == str2.length){
-    return true;
+    true;
   } else {
-    return false;
+    false;
   }
 }
 
@@ -84,9 +84,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num < 90){
-    return true;
+    true;
   } else {
-    return false;
+    false;
   }
 }
 
@@ -95,9 +95,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num > 50){
-    return true;
+    true;
   } else {
-    return false;
+    false;
   }
 }
 
@@ -112,9 +112,9 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 == 0){
-    return true;
+    true;
   } else {
-    return false;
+    false;
   }
 }
 
@@ -122,24 +122,24 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num % 2 > 0){
+    true;
+  } else {
+    false;
+  }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  if(num % 2 > 0){
-    return true;
-  } else {
-    return false;
-  }
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num; 
+  return Math.pow(num,3); 
 }
 
 function elevar(num, exponent) {
@@ -173,9 +173,9 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   var PositivoNegativo = Math.sign(numero);
   If(PositivoNegativo == 1){
-    return "Es positivo";
+    "Es positivo";
   } else if(PositivoNegativo == -1){
-    return "Es negativo";
+    "Es negativo";
   }else if(PositivoNegativo == 0){
     return false;
   }
@@ -249,12 +249,12 @@ function esVocal(letra){
 
     if(minuscula.length == 1){
       if(vocales.indexOf(minuscula) === -1){
-        return "Dato incorrecto";
+        "Dato incorrecto";
       } else {
-        return "Es vocal";
+        "Es vocal";
       }
     } else {
-      return "Dato incorrecto"
+      "Dato incorrecto"
     }
 
   }
